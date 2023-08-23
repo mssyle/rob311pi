@@ -25,6 +25,9 @@ RUN bash -c "git clone https://github.com/erouse/RPi_example_code /home/${user}/
 # LIBCBLAS
 RUN apt-get install -y libatlas-base-dev
 
+# Minicom
+sudo apt-get install -y minicom
+
 # ROB311 Python packages
 RUN bash -c "python3 -m pip install pyPS4Controller"
 RUN bash -c "python3 -m pip install simple-pid"
