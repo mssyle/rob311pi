@@ -13,8 +13,7 @@ network={
 	ssid="${apssid}"                                                         
 	mode=2                                         
 	key_mgmt=WPA-PSK                                                             
-	psk="${appsk}"                                
-	frequency=2462                                                               
+	psk="${appsk}"                                                             
 }
 
 ### your network(s) ###
