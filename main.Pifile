@@ -38,7 +38,7 @@ RUN sed -i "s/gb/us/g" /etc/default/keyboard
 RUN apt-get update
 
 # Upgrade takes considerably more memory and time to build the image.
-# RUN apt-get upgrade -y
+RUN apt-get upgrade -y
 
 ##################################
 
