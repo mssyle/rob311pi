@@ -5,27 +5,27 @@ on:
     inputs:
       host_name:
         description: "Hostname"
-        default: neurobionics
+        default: neuro1
         required: true
       user:
         description: "Username"
         required: true
-        default: pi
+        default: admin
       password:
         description: "Password"
         required: true
-        default: neurobionics
+        default: admin
       mwireless_pass:
         description: "Get the MWireless Passphrase from: https://bit.ly/30zEzPCRPi"
         required: false
       email:
         description: "Email"
         required: true
-        default: lab@umich.edu
+        default: lab@lab.com
       wifi_cc:
         description: "WiFi Country Code"
         required: true        
-        default: US
+        default: UK
       wifi_ssid:
         description: "Additional WiFi SSID"
         required: false
