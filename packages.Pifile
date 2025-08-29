@@ -19,8 +19,8 @@ RUN bash -c "python3 -m pip install pyzmq"
 RUN bash -c "git clone https://github.com/jmontp/rtplot.git /home/${user}/rtplot"
 RUN bash -c "python3 -m pip install /home/${user}/rtplot/"
 
-RUN add-apt-repository universe
-RUN apt update
+# RUN add-apt-repository universe
+# RUN apt update
 
 # Example code
 RUN bash -c "git clone https://github.com/erouse/RPi_example_code /home/${user}/RPi_example_code"
@@ -28,7 +28,7 @@ RUN bash -c "git clone https://github.com/erouse/RPi_example_code /home/${user}/
 # LIBCBLAS
 RUN apt-get install -y libatlas-base-dev
 
-RUN apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
+# RUN apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager -y
 
 # Minicom
 sudo apt-get install -y minicom
